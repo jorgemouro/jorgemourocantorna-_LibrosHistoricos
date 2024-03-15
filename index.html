@@ -1,25 +1,32 @@
+<!-- https://www.hartwell-insurance.com/ -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros históricos</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Museo del libro</title>
 </head>
-<body style="background-image: url('imagenes/fondo1.jpg'); background-size: 100%;">
-    <header>
-        <h1>Bienvenido al museo del libro de Santa Comba</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina1.html">Diario de Ana Frank</a></li>
-                <li><a href="pagina2.html">Manifiesto Comunista</a></li>
-                <li><a href="pagina3.html">Teoría del Contrato Social</a></li>
-                <li><a href="pagina4.html">Volver al inicio</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="text-img">A lo largo de la historia, muchas figuras destacables escribieron numerosos libros explicando sus vidas, sus ideas, etc., con gran influencia a día de hoy. En esta página se mostrarán estos libros; para acceder a la información de cada uno, puedes hacer click en la lista de arriba o en las imágenes de cada uno. </div>
-    <a href="pagina1.html"><div class="hover08"><img src="imagenes/milucha.jpg" alt="Imagen de Mi lucha"></div></a>
+<body>
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Fuentes</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <img class="imagen-fondo" src="imagenes/fondo.png" alt="Fondo">
+    <div class="logo">
+        <img src="imagenes/logo.jpg" alt="Logo">
+    </div>
+    <div class="contenedor">
+
+        <div class="texto-circulo">
+        <h1 class="unfade" id="bienvenido">¡Bienvenido!</h1>
+        <p id="museoTexto" class="oculto">Este es el museo del libro del instituto</p>
+        </div>
+    </div>
+    <h1 id="fueraCirculo" class="borde">Aquí se podran ver los ejemplares más importantes sobre el apartado histórico.</h1>
 </body>
 </html>
