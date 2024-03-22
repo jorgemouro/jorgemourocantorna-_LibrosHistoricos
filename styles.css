@@ -1,74 +1,83 @@
-header {
-    text-align: center;
-    padding: 30px;
-    margin: 0px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    color: rgb(0, 0, 0);
-}
-
-body{
-margin: 0;
-}
-
-h1{
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: rgb(122,138,212);
-color: radial-gradient(circle, rgba(122,138,212,1) 12%, rgba(236,115,180,1) 100%);
-}
-
-nav {
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    position: relative;
 }
 
-nav li {
-    display: inline;
-    margin: 10px;
+.contenedor-imagen {
+    position: relative;
+    text-align: center;
 }
 
-nav li a{
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(122,138,212);
-    color: radial-gradient(circle, rgba(122,138,212,1) 12%, rgba(236,115,180,1) 100%);
-    padding: 10px;
+.texto-encima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.text-img { 
-    color: white; 
-    font: bold 24px/45px Helvetica, Sans-Serif; 
-    letter-spacing: -1px;  
-    background: rgb(0, 0, 0); 
-    background: rgba(0, 0, 0, 0.7);
-    padding: 5px; 
-    margin: 20px;
-    text-align:justify;
- }
-
- .hover08 img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+.unfade {
+    opacity: 0;
+    font-family: impact, sans-serif;
+    animation: fadeInReverse 2s forwards;
 }
 
-.hover08:hover img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+@keyframes fadeInReverse {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-img {
-    width: 100%; 
-    height: auto; 
+.oculto {
+    opacity: 0;
+    font-family: impact, sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
-a {
-    display: inline-block; 
-    width: 30%;
+.aparicion {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.borde {
+    background-color: rgba(34, 132, 165, 0.67);
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Madimi One", sans-serif;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    position:sticky
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 5px solid rgb(9, 55, 70);
+    width: 100%;
+}
+
+.font1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#bienvenido,
+#museoTexto {
+    position: relative; 
+    z-index: 1; 
 }
